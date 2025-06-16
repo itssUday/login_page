@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+    font-family: sans-serif; 
+    } 
+
+    body 
+    {
+    width: 100vw;
+    height: 100vh;
+
+    background: url(https://wallpaperaccess.com/full/1287136.png);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .container
+    {
+    width: 400px;
+    height: 500px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+
+    border-radius: 40px;
+    border: 3px solid rgba(225, 225, 225, 0.3);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+h2
+{
+color: #fff;
+text-transform: uppercase;
+padding: 20px 0;
+font-size: 2em;
+}
+
+.form-group
+{
+position: relative;
+width: 330px;
+border-bottom: 3px solid #fff ;
+margin: 30px 0;
+}
+
+.form-group input
+{
+width: 100%;
+height: 50px;
+background: transparent;
+border: none;
+outline: none;
+
+font-size: 1.2rem;
+color: #fff;
+padding: 30px 0 10px;
+}
+
+.form-group label
+{
+    position: absolute;
+    top:50;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #fff;
+    transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label
+{
+top: -5px;
+}
+
+.form-group i
+{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;  
+}
+
+p
+{
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+p>a
+{
+   color: #fff;
+   text-decoration: none;
+   font-weight: 600; 
+}
+
+p>a:hover
+{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#breakButton
+{ 
+width: 100%;
+height: 50px;
+border-radius: 40px;
+border: none;
+font-size: 1.5rem;
+text-transform: uppercase;
+font-weight: 600;
+margin: 10px 0;
+cursor: pointer;
+transition: 0.5s;
+}
+
+@keyframes mist {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+body {
+    background: url('https://wallpaperaccess.com/full/1287136.png');
+    background-size: cover;
+    animation: mist 10s infinite linear alternate;
+}
+
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#intro-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#breakButton {
+    font-size: 20px;
+    padding: 15px 30px;
+    background: url('https://img.freepik.com/premium-photo/rock-seamless-texture-pattern-close-up-rough-texture-big-rock-natural-stone-surface_335957-240.jpg?w=2000');
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.fragment {
+    position: absolute;
+    background-size: cover;
+    background: url('https://img.freepik.com/premium-photo/rock-seamless-texture-pattern-close-up-rough-texture-big-rock-natural-stone-surface_335957-240.jpg?w=2000');
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    
+}
